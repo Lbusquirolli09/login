@@ -1,9 +1,6 @@
 <!doctype html>
-<html lang="pt-br">
-  <!--
-      Para acessar o projeto, habilite o Apache no XAMPP
-        http://localhost/login/
--->
+<html lang="en">
+<!--Para acessar o projeto,habilitar o  http://localhost/login/  no navegador -->
 
 <head>
     <!-- Required meta tags -->
@@ -17,26 +14,59 @@
 </head>
 
 <body class="bg-dark">
-    
+    <!-- Fundo Escuro -->
     <main class="container mt-4">
         <section class="row">
             <div class="col-lg-4 offset-lg-4" id="alerta">
-                <div class="alert alert-sucess text-center">
+                <div class="alert alert-success text-center">
                     <strong class="resultado">
-                        Alo Ha Tchurrrrrmaaaa 
+                        Alo Ha tchurmáaaaaaaaaaaaa
                     </strong>
                 </div>
             </div>
         </section>
-        <!--Formulário de Login-->
+        <!-- formulário de login -->
         <section class="row">
             <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaLogin">
-            <h2 class="text-center mt-2">
-                Entrar no sistema
-            </h2>
+                <h2 class="text-center mt-2">
+                    Entrar no Sistema
+                </h2>
                 <form action="#" method="post" class="p-2" id="formLogin">
                     <div class="form-group">
-                        <input type="text" name="" id="">
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="nome de Usuário" class="form-control">
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input">
+                            <label for="lembrar" class="custom-control-label">
+                                Lembrar de mim.
+                            </label>
+
+                            <a href="#" class="float-right" id="btnEsqueci">
+                                Esqueci a senha!
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="::Entrar::"
+                        name="btnEntrar" id="btnEntrar" class="btn btn-primary btn-block">
+                    </div>
+
+                    <div class="form-group">
+                        <p>Novo usuário?
+                            <a href="#" id="btnRegistrar">
+                                Registra-se aqui!
+                            </a>
+
+
+                        </p>
                     </div>
 
                 </form>
