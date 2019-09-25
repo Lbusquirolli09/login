@@ -36,7 +36,7 @@
                         <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="nome de Usuário" class="form-control">
                     </div>
 
-
+                    <!--inicio da seçao de login -->
                     <div class="form-group">
                         <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control">
                     </div>
@@ -72,9 +72,9 @@
                 </form>
             </div>
         </section>
-        <!-- Final da Sessão de Login -->
+        <!-- Final da Seção de Login -->
         <br>
-        <!-- Formulario de Recuperação de Senha -->
+        <!-- Formulário de Recuperação de Senha -->
             <section class="row">
             <div class="col-lg-4 offset-lg-4 bg-light rounded"
             id="caixaLogin">
@@ -114,6 +114,7 @@
 
 
             </section>
+            <!-- Fim da Seção de Recuperação de senha -->
 
     </main>
 
