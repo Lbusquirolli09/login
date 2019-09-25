@@ -62,7 +62,7 @@
                     <div class="form-group">
                         <p>Novo usuário?
                             <a href="#" id="btnRegistrar">
-                                Registra-se aqui!
+                                Registrar-se aqui!
                             </a>
 
 
