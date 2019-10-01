@@ -41,12 +41,12 @@
                 </h2>
                 <form action="#" method="post" class="p-2" id="formLogin">
                     <div class="form-group">
-                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="nome de Usuário" class="form-control">
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="nome de Usuário" class="form-control" required mainlenght="5">
                     </div>
 
                     <!--inicio da seçao de login -->
                     <div class="form-group">
-                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control">
+                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required mainlenght="6">
                     </div>
 
                     <div class="form-group">
@@ -94,7 +94,7 @@
                         </small>
                     </div>
                     <div>
-                        <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" place="E-mail de recuperação de senha">
+                        <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" placeholder="E-mail de recuperação de senha" required>
                     </div>
 
                     <div>
@@ -128,24 +128,24 @@
 
 
                     <div class="form-group">
-                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" placeholder="Nome Completo">
+                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" placeholder="Nome Completo" required minlength="6">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" name="nomelUsuario" id="nomeUsuario" class="form-control" placeholder="nome usuario">
+                        <input type="text" name="nomelUsuario" id="nomeUsuario" class="form-control" placeholder="nome usuario" required minlenght="5">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" name="emailUsuario" id="emailUsuario" class="form-control" placeholder="E-mail">
+                        <input type="email" name="emailUsuario" id="emailUsuario" class="form-control" placeholder="E-mail" required>
                     </div>
 
 
                     <div class="form-group">
-                        <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control" placeholder="senha">
+                        <input type="password" name="senhaDoUsuario" id="senhaDoUsuario" class="form-control" placeholder="senha" required minlenght="6">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" name="senhaUsuarioConfirmar" class="form-control" placeholder="Confirmar Senha">
+                        <input type="password" name="senhaUsuarioConfirmar" class="form-control" placeholder="Confirmar Senha" required minlenght="6">
                     </div>
 
                     <div class="form-group">
@@ -156,13 +156,13 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" value="::Registrar::" name="btnRegistrado" class="btn btn-primary btn-clock">
+                        <input type="submit" value="::Registrar::" name="btnRegistrar" id="btnRegistrar" class="btn btn-primary btn-clock">
                     </div>
 
 
                     <div class="form-group">
                         <p class="text-center">
-                                Já registrado?
+                            Já registrado?
                             <a href="#" id="btnjaRegistrado2">
                                 Entrar por aqui.
                             </a>
@@ -181,12 +181,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>_+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
     <script>
         //Código jQuerry para mostrar e ocultar os formulárioss
         $(function() {
+
             $("#btnEsqueci").click(function() {
                 $("#caixaLogin").hide(); //Ocultar login
                 $("#caixaSenha").show(); //Mostrar nova senha
