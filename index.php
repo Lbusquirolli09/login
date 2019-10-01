@@ -156,13 +156,13 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" value="::Registrar::" name="btnRegistrar" class="btn btn-primary btn-clock">
+                        <input type="submit" value="::Registrar::" name="btnRegistrado" class="btn btn-primary btn-clock">
                     </div>
 
 
                     <div class="form-group">
                         <p class="text-center">
-                            Já registrado?
+                                Já registrado?
                             <a href="#" id="btnjaRegistrado2">
                                 Entrar por aqui.
                             </a>
@@ -188,17 +188,24 @@
         //Código jQuerry para mostrar e ocultar os formulárioss
         $(function() {
             $("#btnEsqueci").click(function() {
-                $("#caixaLogin").hide(); //ocultar
-                $("#caixaSenha").show(); //mostrar
+                $("#caixaLogin").hide(); //Ocultar login
+                $("#caixaSenha").show(); //Mostrar nova senha
             });
 
+            $("#btnJaRegistrado").click(function() {
+                $("#caixaSenha").hide(); // ocultar gerar nova senha
+                $("#caixaLogin").show(); //mostrar login
+            });
 
             $("#btnRegistrarNovo").click(function() {
-                $("#caixaLogin").hide();
+                $("#caixaLogin").hide(); //Ocultar
                 $("#caixaRegistro").show();
             });
 
-            $("#btnJaRegistrado").click()
+            $("#btnJaRegistrado2").click(function() {
+                $("#caixaLogin").show(); //Ocultar
+                $("#caixaRegistro").hide();
+            });
 
 
         });

@@ -1,13 +1,14 @@
 # login
 Sistema de Login em PHP e Javascript
 
-# aula04 - 01/09/2019
-
+# aula04 - 01/10/2019
+ - Validação com HTML5
+ - Validação dos campos com jQuerry validate
 
 # aula03 - 30/09/2019
  - Formulário de Cadastro de novos usúarios
- - Validação dos campos com jQuerry validate
- - ~Ocultar e Mostrar os formulários com jQuerry~
+ - ~Validação dos campos com jQuerry validate~
+ - Ocultar e Mostrar os formulários com jQuerry
  
  jQuerry é uma biblioteca de funções javascript.
 
