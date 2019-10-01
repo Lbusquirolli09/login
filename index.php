@@ -12,9 +12,11 @@
 
     <title>Sistema de Login</title>
     <style>
-        #alerta, #caixaSenha, #caixaRegistro {
+        #alerta,
+        #caixaSenha,
+        #caixaRegistro {
             display: none;
-    }
+        }
     </style>
 
 </head>
@@ -147,9 +149,9 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="custom-control custom-checkbox" id="concordar" class="custom-control-input">
-                            <input type="checkbox" name="concordar" id="concordar" class="custom-control-i"">
-                            <label for=" concordar" class="custom-control-label">Eu concordo com <a href="#">os termos e condições.</label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="concordar" id="concordar" class="custom-control-input">
+                            <label for="concordar" class="custom-control-label">Eu concordo com <a href="#">os termos e condições.</label>
                         </div>
                     </div>
 
@@ -184,6 +186,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         //Código jQuerry para mostrar e ocultar os formulárioss
+        $(function() {
+            $("#btnEsqueci").click(function() {
+                $("#caixaLogin").hide(); //ocultar
+                $("#caixaSenha").show(); //mostrar
+            });
+
+
+            $("#btnRegistrarNovo").click(function() {
+                $("#caixaLogin").hide();
+                $("#caixaRegistro").show();
+            });
+
+            $("#btnJaRegistrado").click()
+
+
+        });
     </script>
 </body>
 
