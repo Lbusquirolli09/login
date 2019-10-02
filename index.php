@@ -117,7 +117,7 @@
 
 
 
-        </section> vv
+        </section> 
         <!-- Fim da Seção de Recuperação de senha -->
 
         <!-- Inicio do formulário de cadastro de novos usuários -->
