@@ -117,7 +117,7 @@
 
 
 
-        </section> 
+        </section>
         <!-- Fim da Seção de Recuperação de senha -->
 
         <!-- Inicio do formulário de cadastro de novos usuários -->
@@ -230,7 +230,29 @@
                 $("#caixaRegistro").hide();
             });
 
-
+            //Cadastro de novo usuario
+            $("#btnRegistrar").click(function(e){
+                if(document
+                .querySelector("#formRegistro")
+                .checkValidity()){
+                    e.prevenDefault();//não abrir outra pagina
+                    //envio dos dados via Ajax
+                    $.ajax({
+                        url: 'receber_dados.php',
+                        method: 'post',
+                        data: $("#formRegistro").serialize()+'&action=cadastro',
+                        success:function(resposta){
+                            $("#alerta").show();
+                            $(".resultado").html("resposta");
+                        }
+                    });
+                }
+                return true;
+            });
+            //Login
+            $("#btnEntrar").click(function(e) {});
+            //Recuperação de senha
+            $("#btnGerar").click( function(e) {});
         });
 
         /*
