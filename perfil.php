@@ -5,7 +5,6 @@ require_once "session.php";
 <html lang="pt-br">
 
 <head>
-
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,9 +16,8 @@ require_once "session.php";
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: Aqua;">
-        <a class=" navbar-brand" href="#">Oakley Systems</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">TNX Systems</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,6 +29,7 @@ require_once "session.php";
                 <li class="nav-item">
                     <a class="nav-link" href="#">Destaques</a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <?= $nomeDoUsuario ?>
@@ -47,21 +46,19 @@ require_once "session.php";
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Bem-Vind@</h1>
+            <h1 class="display-4">Boas vindas</h1>
 
-            <h2 class="display-2 text-center rounded p-1 text-light" style="background-color:Aqua ">
+            <h2 class="display-2 text-center rounded p-1" style="background-color: deepPink; color: deepSkyBlue;">
                 <?= $nomeCompleto ?>
             </h2>
-
             <h2 class="text-center">
                 E-mail do Usuário:
                 <a href="mailto:<?= $emailUsuario ?>">
                     <?= $emailUsuario ?>
                 </a>
             </h2>
-
             <h2 class="text-center">
-                Registrado em: <?php echo date('d/m/Y', strtotime($dataCriado)); ?>
+                Registrado em: <?= $dataCriado  ?>
             </h2>
         </div>
     </div>
